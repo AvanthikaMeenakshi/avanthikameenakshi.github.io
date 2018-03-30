@@ -17,7 +17,7 @@ export const loadPosts = function () {
         } else {
             url = `/feed/@avanthikameenakshi`;
         }
-        return axios.get('/feed/@avanthikameenakshi').then(response => response.data
+        return axios.get(url).then(response => response.data
         ).then((json) => {
             console.log(json);
             // const dataJson = json.replace('])}while(1);</x>', '');
