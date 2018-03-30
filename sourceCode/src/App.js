@@ -1,20 +1,16 @@
 import React, { Component } from 'react';
 import './App.css';
 import {
-  Switch,
   Route
 } from 'react-router-dom';
-
-const Main = () => (<div>hksjhkdjsh</div>);
+import mediumPosts from './components/mediumPosts';
 
 class App extends Component {
   render() {
     return (
-      <Switch>
-        <div>
-          <Route exact path="/" component={Main} />
-        </div>
-      </Switch>
+      <div>
+        <Route exact path="/" component={mediumPosts} />
+      </div>
     );
   }
 }
