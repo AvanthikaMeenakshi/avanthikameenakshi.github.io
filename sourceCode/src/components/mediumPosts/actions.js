@@ -10,11 +10,11 @@ export const loadPosts = function () {
             type: LOAD_POSTS_REQUEST,
             posts: []
         });
+        console.log(process);
         return axios.get("/@avanthikameenakshi/latest?format=json").then(response => response.data
         ).then((json) => {
             const dataJson = json.replace('])}while(1);</x>', '');
             const mediumPostData = JSON.parse(dataJson);
-            console.log(mediumPostData);
             console.log(mediumPostData.payload.references.SocialStats)
             console.log(mediumPostData.payload.references.Post)
         }).catch((error) => {
