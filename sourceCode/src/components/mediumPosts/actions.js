@@ -10,9 +10,13 @@ export const loadPosts = function () {
             type: LOAD_POSTS_REQUEST,
             posts: []
         });
-        return axios.get("https://medium.com/@avanthikameenakshi/latest?format=json").then(response => response.data
+        return axios.get("/@avanthikameenakshi/latest?format=json").then(response => response.data
         ).then((json) => {
-            console.log(json)
+            const dataJson = json.replace('])}while(1);</x>', '');
+            const mediumPostData = JSON.parse(dataJson);
+            console.log(mediumPostData);
+            console.log(mediumPostData.payload.references.SocialStats)
+            console.log(mediumPostData.payload.references.Post)
         }).catch((error) => {
             dispatch({
                 type: LOAD_POSTS_FAILURE,
