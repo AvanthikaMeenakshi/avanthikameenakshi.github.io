@@ -10,9 +10,14 @@ export const loadPosts = function () {
             type: LOAD_POSTS_REQUEST,
             posts: []
         });
-        console.log(window.location);
-        let hostNameCheck = window.location.hostname === ''
-        return axios.get("/@avanthikameenakshi/latest?format=json").then(response => response.data
+        let hostNameCheck = window.location.hostname === 'avanthikameenakshi.github.io';
+        let url;
+        if(hostNameCheck) {
+            url = `https://medium.com/@avanthikameenakshi/latest?format=json`
+        } else {
+            url = `/@avanthikameenakshi/latest?format=json`;
+        }
+        return axios.get(url).then(response => response.data
         ).then((json) => {
             const dataJson = json.replace('])}while(1);</x>', '');
             const mediumPostData = JSON.parse(dataJson);
