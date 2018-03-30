@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "https://AvanthikaMeenakshi.github.io",
+  "PUBLIC_URL": "https://medium.com",
   "proxy": "https://medium.com",
   "dependencies": {
     "axios": "^0.18.0",
