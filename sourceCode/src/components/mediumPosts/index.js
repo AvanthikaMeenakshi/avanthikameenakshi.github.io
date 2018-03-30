@@ -1,6 +1,14 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { map } from 'lodash';
 import { loadPosts } from './actions';
+import {
+    Tag, Card, Button,
+    Classes,
+    Navbar,
+    NavbarDivider,
+    NavbarGroup,
+    NavbarHeading } from "@blueprintjs/core";
 
 class mediumPosts extends Component {
     constructor(props) {
@@ -9,8 +17,34 @@ class mediumPosts extends Component {
     }
     render() {
         return (
-            <div className="container">
-                hello
+            <div>
+                <Navbar>
+                    <NavbarGroup>
+                        <NavbarHeading>Avanthika Meenakshi</NavbarHeading>
+                        <NavbarDivider />
+                        <Button className={Classes.MINIMAL} icon="home" text="Home" />
+                        <Button className={Classes.MINIMAL} icon="document" text="Files" />
+                    </NavbarGroup>
+                </Navbar>
+                <div className="card-layout">
+                {this.props.posts.references ? map(this.props.posts.references.Post, post => {
+                        console.log(this.props.posts.references.Post);
+                    return (
+                        <Card style={{'flexBasis': `${100 / this.props.posts.references.Post.length}%`}} key={post.id} elevation={1} interactive>
+                        {post.title}
+                        {post.virtuals.totalClapCount}
+                        {map(post.virtuals.tags, tag => {
+                            return (<span className="tag-spacing">
+                                <Tag
+                                    key={`${tag.slug}${tag.postCount}`} >
+                                    {tag.name}
+                                </Tag>
+                            </span>)})
+                        }
+                        </Card>
+                    );
+                }) : null}
+                </div>
             </div>
         )
     }

@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+html, body {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.tag-spacing {
+    padding: 0 5px;
+}
+
+.card-layout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pt-navbar {
+    margin-bottom: 10px;
+}
+
+.card-layout .pt-card {
+    margin: 10px;
+}

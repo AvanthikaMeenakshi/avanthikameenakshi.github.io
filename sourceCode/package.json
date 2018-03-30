@@ -5,7 +5,10 @@
   "homepage": "https://AvanthikaMeenakshi.github.io",
   "proxy": "https://medium.com",
   "dependencies": {
+    "@blueprintjs/core": "^2.0.1",
+    "@blueprintjs/icons": "^2.0.0",
     "axios": "^0.18.0",
+    "blueprintjs": "0.0.8",
     "history": "^4.7.2",
     "lodash": "^4.17.5",
     "react": "^16.2.0",
@@ -13,6 +16,7 @@
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.1",
+    "react-transition-group": "^2.3.0",
     "redux": "^3.7.2",
     "redux-thunk": "^2.2.0"
   },
