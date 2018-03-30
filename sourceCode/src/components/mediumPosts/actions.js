@@ -10,7 +10,8 @@ export const loadPosts = function () {
             type: LOAD_POSTS_REQUEST,
             posts: []
         });
-        console.log(window.location.pathname);
+        console.log(window.location);
+        let hostNameCheck = window.location.hostname === ''
         return axios.get("/@avanthikameenakshi/latest?format=json").then(response => response.data
         ).then((json) => {
             const dataJson = json.replace('])}while(1);</x>', '');
