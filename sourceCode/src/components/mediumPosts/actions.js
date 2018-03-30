@@ -13,16 +13,17 @@ export const loadPosts = function () {
         let hostNameCheck = window.location.hostname === 'avanthikameenakshi.github.io';
         let url;
         if(hostNameCheck) {
-            url = `https://medium.com/@avanthikameenakshi/latest?format=json`
+            url = `https://medium.com/feed/@avanthikameenakshi`
         } else {
-            url = `/@avanthikameenakshi/latest?format=json`;
+            url = `/feed/@avanthikameenakshi`;
         }
-        return axios.get(url).then(response => response.data
+        return axios.get('/feed/@avanthikameenakshi').then(response => response.data
         ).then((json) => {
-            const dataJson = json.replace('])}while(1);</x>', '');
-            const mediumPostData = JSON.parse(dataJson);
-            console.log(mediumPostData.payload.references.SocialStats)
-            console.log(mediumPostData.payload.references.Post)
+            console.log(json);
+            // const dataJson = json.replace('])}while(1);</x>', '');
+            // const mediumPostData = JSON.parse(dataJson);
+            // console.log(mediumPostData.payload.references.SocialStats)
+            // console.log(mediumPostData.payload.references.Post)
         }).catch((error) => {
             dispatch({
                 type: LOAD_POSTS_FAILURE,
