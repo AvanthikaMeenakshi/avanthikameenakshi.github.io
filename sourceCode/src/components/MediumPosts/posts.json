@@ -1,4 +1,4 @@
-const postsData = {
+{
     "success": true,
     "payload": {
         "user": {
@@ -3368,5 +3368,3 @@ const postsData = {
     "v": 3,
     "b": "33168-1e350dd"
 }
-
-export default postsData;

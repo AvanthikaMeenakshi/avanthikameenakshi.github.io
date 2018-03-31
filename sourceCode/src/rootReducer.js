@@ -1,4 +1,4 @@
-import mediumPosts from './components/mediumPosts/reducer'
+import mediumPosts from './components/MediumPosts/reducer'
 import { combineReducers } from 'redux';
 
 const rootReducer = combineReducers({
