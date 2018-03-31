@@ -12,14 +12,7 @@ export const loadPostsLocalSetup = function () {
             type: LOAD_POSTS_REQUEST,
             posts: []
         });
-        let hostNameCheck = window.location.hostname === 'avanthikameenakshi.github.io';
-        let url;
-        if(hostNameCheck) {
-            url = `https://medium.com/@avanthikameenakshi/latest?format=json`
-        } else {
-            url = `/@avanthikameenakshi/latest?format=json`;
-        }
-        return axios.get(url).then(response => response.data
+        return axios.get(`/@avanthikameenakshi/latest?format=json`).then(response => response.data
         ).then((json) => {
             const dataJson = json.replace('])}while(1);</x>', '');
             const mediumPostData = JSON.parse(dataJson);
@@ -38,10 +31,11 @@ export const loadPostsLocalSetup = function () {
 
 export const loadPosts = function () {
     return function (dispatch) {
-        postsData.references.Post = map(postsData.references.Post, post => (post));
+        const posts = postsData.payload;
+        posts.references.Post = map(posts.references.Post, post => (post));
         dispatch({
             type: LOAD_POSTS_SUCCESS,
-            posts: postsData
+            posts
         });
     };
 }
