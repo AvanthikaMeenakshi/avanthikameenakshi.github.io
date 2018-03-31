@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { map } from 'lodash';
 import { loadPosts, loadPostsLocalSetup } from './actions';
-import { Tag, Card } from "@blueprintjs/core";
+import { Tag, Card, Icon, Intent } from "@blueprintjs/core";
 
 
 class MediumPosts extends Component {
@@ -19,21 +19,24 @@ class MediumPosts extends Component {
                     console.log(post);
                     return (
                         <Card style={{ 'flexBasis': `calc((100% / 3) - 20px)`}} key={post.id} elevation={0}>
-                            <img className="grayscale" style={{'width': '100%'}} alt={post.title} src={`https://cdn-images-1.medium.com/fit/t/800/240/${post.virtuals.previewImage.imageId}`} />
-                            <h4>{post.title}</h4>
-                            Total claps: {post.virtuals.totalClapCount}
-                            Views: {post.virtuals.totalClapCount * this.props.posts.references.Post.length}
-                            {post.previewContent.bodyModel.paragraphs[post.previewContent.bodyModel.paragraphs.length - 1].text}
-                            {map(post.virtuals.tags, tag => {
-                                return (<span key={`${tag.postCount}tags`} className="tag-spacing">
-                                    <Tag
-                                        key={`${tag.slug}${tag.postCount}`}
-                                        className="tag-color"
-                                    >
-                                        {tag.name}
-                                    </Tag>
-                                </span>)})
-                            }
+                            <div className="card-wrapper">
+                                <h4>{post.title}</h4>
+                                {post.previewContent.bodyModel.paragraphs[post.previewContent.bodyModel.paragraphs.length - 1].text}
+                                <h6 title="Claps"><Icon icon="heart"/>{post.virtuals.totalClapCount}</h6>
+                                <h6 title="Reach"><Icon icon="pulse" />{post.virtuals.totalClapCount * this.props.posts.references.Post.length}</h6>
+                                <div>
+                                {map(post.virtuals.tags, tag => {
+                                    return (<span key={`${tag.postCount}tags`} className="tag-spacing">
+                                        <Tag
+                                            intent={Intent.WARNING}
+                                            key={`${tag.slug}${tag.postCount}`}
+                                        >
+                                            {tag.name}
+                                        </Tag>
+                                    </span>)})
+                                }
+                                </div>
+                            </div>
                         </Card>
                     );
                 }) : null}
