@@ -10,12 +10,11 @@ html, body {
 }
 
 .pt-navbar.pt-dark, .pt-dark .pt-navbar {
-    background-color: #d9822b !important;
+    background-color: #262626 !important;
+    border-bottom: 3px solid #2b2b2b;
 }
 
 .card-wrapper {
-    display: flex;
-    flex-wrap: wrap;
     height: 100%;
 }
 
@@ -34,8 +33,39 @@ html, body {
     opacity: 0.6;
 }
 
+.tag-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.profile-section .profile-meta{
+    margin: 20px 0;
+    text-align: center;
+}
+
 .tag-spacing {
-    padding: 0 5px;
+    margin: 5px 5px 0px 0px;
+    display: block;
+    cursor: pointer;
+}
+
+.preview-content {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 300;
+    letter-spacing: 0.8px;
+    margin-bottom: 20px;
+}
+
+.blog-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.pt-tag {
+    color: #FFF !important;
+    background: #474747 !important;
 }
 
 .card-layout {
@@ -49,6 +79,7 @@ html, body {
 
 .card-layout .pt-card {
     margin: 10px;
+    width: 100%;
 }
 
 .pt-card {
