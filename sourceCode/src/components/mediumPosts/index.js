@@ -20,9 +20,9 @@ class MediumPosts extends Component {
                             <div className="card-wrapper">
                                 <div><h4 className="blog-title">{post.title}</h4></div>
                                 <div className="preview-content">{post.previewContent.bodyModel.paragraphs[post.previewContent.bodyModel.paragraphs.length - 1].text}</div>
-                                <div>
+                                <div className="meta-section">
                                     <h6 title="Claps"><Icon icon="heart"/>{post.virtuals.totalClapCount}</h6>
-                                    <h6 title="Reach"><Icon icon="pulse" />{post.virtuals.totalClapCount * this.props.posts.references.Post.length}</h6>
+                                    <h6 className="reach" title="Reach"><Icon icon="pulse" />{post.virtuals.totalClapCount * this.props.posts.references.Post.length}</h6>
                                 </div>
                                 <div className="tag-container">
                                 {map(post.virtuals.tags, tag => {

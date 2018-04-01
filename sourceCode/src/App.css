@@ -43,6 +43,22 @@ html, body {
     text-align: center;
 }
 
+.pt-dark h6 {
+    color: #7d7d7d !important;
+}
+
+.meta-section .reach {
+    margin-left: 10px;
+}
+
+.meta-section {
+    display: flex;
+}
+
+.meta-section svg {
+    margin-right: 10px;
+}
+
 .tag-spacing {
     margin: 5px 5px 0px 0px;
     display: block;
@@ -60,7 +76,7 @@ html, body {
 .blog-title {
     font-size: 30px;
     margin-bottom: 20px;
-    font-weight: 700;
+    font-weight: 100;
 }
 
 .pt-tag {
