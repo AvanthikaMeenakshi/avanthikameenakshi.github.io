@@ -9,6 +9,7 @@ import createBrowserHistory from 'history/createBrowserHistory';
 import { createStore, applyMiddleware, compose } from 'redux';
 import thunkMiddleware from 'redux-thunk';
 import rootReducer from './rootReducer';
+import 'bootstrap/dist/css/bootstrap.css';
 
 const history = createBrowserHistory();
 const store = createStore(rootReducer, compose(
