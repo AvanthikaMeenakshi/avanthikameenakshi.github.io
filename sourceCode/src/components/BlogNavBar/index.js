@@ -31,7 +31,7 @@ export default class BlogNavBar extends React.Component {
         <Collapse isOpen={this.state.isOpen} navbar>
           <Nav className="ml-auto" navbar>
             <NavItem>
-              <a className="nav-link" target="_blank" href="https://github.com/AvanthikaMeenakshi">GitHub</a>
+              <a className="nav-link" target="_blank" rel="noopener noreferrer" href="https://github.com/AvanthikaMeenakshi">GitHub</a>
             </NavItem>
             <NavItem>
               <NavLink href="/about">About</NavLink>

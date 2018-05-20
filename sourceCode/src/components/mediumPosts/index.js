@@ -19,7 +19,7 @@ class MediumPosts extends Component {
                         {this.props.posts.references ? map(this.props.posts.references.Post, post => {
                             return (
                                 <div key={post.id} className="post-preview">
-                                    <a target='_blank' href={`https://medium.com/@avanthikameenakshi/${post.uniqueSlug}`}>
+                                    <a target='_blank' rel="noopener noreferrer" href={`https://medium.com/@avanthikameenakshi/${post.uniqueSlug}`}>
                                         <h2 className="post-title">
                                             {post.title}
                                         </h2>
@@ -27,7 +27,7 @@ class MediumPosts extends Component {
                                             {post.previewContent.bodyModel.paragraphs[post.previewContent.bodyModel.paragraphs.length - 1].text}
                                         </h3>
                                     </a>
-                                    <p className="post-meta">Posted by <a target='_blank' href="https://medium.com/@avanthikameenakshi">Avanthika Meenakshi</a> on {monthsArray[new Date(post.createdAt).getMonth()]} {new Date(post.createdAt).getDate()}, {new Date(post.createdAt).getFullYear()}</p>
+                                    <p className="post-meta">Posted by <a target='_blank' rel="noopener noreferrer" href="https://medium.com/@avanthikameenakshi">Avanthika Meenakshi</a> on {monthsArray[new Date(post.createdAt).getMonth()]} {new Date(post.createdAt).getDate()}, {new Date(post.createdAt).getFullYear()}</p>
                                 </div>
                             );
                         }) : null}

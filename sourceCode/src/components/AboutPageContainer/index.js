@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-// import { Card, Tag } from "@blueprintjs/core";
 import { loadPosts } from '../MediumPosts/actions';
-import { isEmpty, map } from 'lodash';
 import ImageSection from '../ImageSection';
 import BlogNavBar from '../BlogNavBar';
 

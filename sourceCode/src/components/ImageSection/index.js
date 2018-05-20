@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
 
 class ImageSection extends Component {
-    constructor(props) {
-        super(props);
-    }
     render() {
         const imgUrl = this.props.imageUrl || '/img/homeImg.jpg';
-        console.log(imgUrl);
+        const title = this.props.title || 'Code Radar';
+        const desc = this.props.desc || 'Coffee. Coding. Cats. And much more.';
         const style = { backgroundImage: `url(${imgUrl})` }
         return (
             <header className="masthead" style={style}>
@@ -15,8 +13,8 @@ class ImageSection extends Component {
                     <div className="row">
                         <div className="col-lg-8 col-md-10 mx-auto">
                         <div className="site-heading">
-                            <h1>Code Radar</h1>
-                            <span className="subheading">Coffee. Coding. Cats. And much more.</span>
+                            <h1>{title}</h1>
+                            <span className="subheading">{desc}</span>
                         </div>
                         </div>
                     </div>
