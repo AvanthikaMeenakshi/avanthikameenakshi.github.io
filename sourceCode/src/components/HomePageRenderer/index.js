@@ -10,7 +10,6 @@ const HomePageRenderer = () => (
         <ImageSection />
         <div className="main-section-wrapper">
             <div className="sidebar-wrapper">
-            <SideBar />
             </div>
             <div className="layout-wrapper">
             <MediumPosts />
@@ -18,6 +17,8 @@ const HomePageRenderer = () => (
         </div>
     </div>
 );
+
+{/* <SideBar /> */}
 
 export default HomePageRenderer;
 
