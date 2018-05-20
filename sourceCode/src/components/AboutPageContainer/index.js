@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { loadPosts } from '../MediumPosts/actions';
 import { isEmpty, map } from 'lodash';
 import ImageSection from '../ImageSection';
+import BlogNavBar from '../BlogNavBar';
 
 class AboutPageContainer extends Component {
     constructor(props) {
@@ -14,9 +15,19 @@ class AboutPageContainer extends Component {
         console.log(this.props.posts);
         return (
             <div>
+                <BlogNavBar />
                 <ImageSection
                     imageUrl={`/img/about-bg.jpg`}
+                    title={"About Me"}
+                    desc={"This is what I do!"}
                 />
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-8 col-md-10 mx-auto">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nostrum ullam eveniet pariatur voluptates odit, fuga atque ea nobis sit soluta odio, adipisci quas excepturi maxime quae totam ducimus consectetur?</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         )
     }
