@@ -5,7 +5,9 @@ class ImageSection extends Component {
         super(props);
     }
     render() {
-        const style = { backgroundImage: "url('/img/homeImg.jpg')" }
+        const imgUrl = this.props.imageUrl || '/img/homeImg.jpg';
+        console.log(imgUrl);
+        const style = { backgroundImage: `url(${imgUrl})` }
         return (
             <header className="masthead" style={style}>
                 <div className="overlay"></div>

@@ -1,7 +1,6 @@
 import React from 'react';
 import BlogNavBar from '../BlogNavBar';
 import MediumPosts from '../MediumPosts';
-import SideBar from '../SideBar';
 import ImageSection from '../ImageSection';
 
 const HomePageRenderer = () => (
@@ -17,8 +16,6 @@ const HomePageRenderer = () => (
         </div>
     </div>
 );
-
-{/* <SideBar /> */}
 
 export default HomePageRenderer;
 
