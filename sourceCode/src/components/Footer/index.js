@@ -10,7 +10,7 @@ const Footer = () => (
                             <a href="#">
                                 <span className="fa-stack fa-lg">
                                     <i className="fa fa-circle fa-stack-2x"></i>
-                                    <i className="fab fa-twitter"></i>
+                                    <i className="fa fa-twitter fa-stack-1x fa-inverse"></i>
                                 </span>
                             </a>
                         </li>
@@ -31,7 +31,7 @@ const Footer = () => (
                             </a>
                         </li>
                     </ul>
-                    <p className="copyright text-muted">Copyright © Your Website 2018</p>
+                    <p className="copyright text-muted">Copyright © Avanthika 2018</p>
                 </div>
             </div>
         </div>
