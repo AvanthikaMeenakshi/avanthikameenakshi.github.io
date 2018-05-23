@@ -2,6 +2,7 @@ import React from 'react';
 import BlogNavBar from '../BlogNavBar';
 import MediumPosts from '../MediumPosts';
 import ImageSection from '../ImageSection';
+import Footer from '../Footer';
 
 const HomePageRenderer = () => (
     <div className="pt-dark">
@@ -14,6 +15,7 @@ const HomePageRenderer = () => (
             <MediumPosts />
             </div>
         </div>
+        <Footer />
     </div>
 );
 
