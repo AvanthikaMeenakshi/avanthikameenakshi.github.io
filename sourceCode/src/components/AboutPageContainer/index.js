@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ImageSection from '../ImageSection';
 import BlogNavBar from '../BlogNavBar';
+import Footer from '../Footer';
 import { Progress } from 'reactstrap';
 import { Table } from 'reactstrap';
 
@@ -97,12 +98,13 @@ class AboutPageContainer extends Component {
                             <p>
                                 While I'm not coding or doing stuff related to tech, you can find me in reviewing a book <a target="_blank" rel="noopener noreferrer" href="https://www.goodreads.com/user/show/26453047-avanthika">online</a> or in a library. Or with my cat, Anjali. She's a 3 year old white "Bombay cat" (that's what they call native Indian cats), with beautiful yellow eyes.
                             </p>
-                            <p>If you wish to connect with me, drop me an email or leave a message for me on facebook.
+                            <p>If you wish to connect with me, drop me an <a href="mailto:avanthika157@gmail.com">email</a> or leave a message for me on <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/avanthika.meenakshi">facebook</a>.
                                 I'm rare species of millennial that doesn't like the tiny QWERTY touch-pad in my smart-phone, but I will get back.
                             </p>
                         </div>
                     </div>
                 </div>
+                <Footer />
             </div>
         )
     }
