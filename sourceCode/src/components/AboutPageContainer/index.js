@@ -19,10 +19,30 @@ class AboutPageContainer extends Component {
                     title={"About Me"}
                     desc={"This is what I do!"}
                 />
-                <div className="container">
+                <div className="container about-section">
                     <div className="row">
                         <div className="col-lg-8 col-md-10 mx-auto">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nostrum ullam eveniet pariatur voluptates odit, fuga atque ea nobis sit soluta odio, adipisci quas excepturi maxime quae totam ducimus consectetur?</p>
+                            <div className="profile-image-container">
+                                <img className="profile-image" alt="avanthika" src="/img/avanthika.jpg" />
+                            </div>
+                            <p>
+                                Hey there! I'm Avanthika. I believe you are here because you want to know something about me, huh? I'm not good at explaining me, but yea, I've tried my best.
+                            </p>
+                            <p>
+                                I'm a learner. I was that kid who was ridiculed for asking questions. Years down the lane, I aspire to architect solutions.
+                                I don't have the patience for positioning a "div" on the web-page, if you ignore that, you can count me for a full-stack developer.
+                                I go mad when code isn't aligned.
+                            </p>
+                            <p> I'm obsessed with coding, but I believe in thinking and planning before writing the code. I like keeping the code DRY.
+                                The amount of code I punch in is directly proportional to the coffee I consume.
+                                And a little truth: I cannot survive without stackoverflow.
+                            </p>
+                            <p>
+                                While I'm not coding or doing stuff related to tech, you can find me in reviewing a book <a href="https://www.goodreads.com/user/show/26453047-avanthika" targer="_blank">online</a> or in a library. Or with my cat, Anjali. She's a 3 year old white "Bombay cat" (that's what they call native Indian cats), with beautiful yellow eyes.
+                            </p>
+                            <p>If you wish to connect with me, drop me an email or leave a message for me on facebook.
+                                I'm a millennial that doesn't like the tiny QWERTY touch-pad in my smart-phone, but I will get back.
+                            </p>
                         </div>
                     </div>
                 </div>
