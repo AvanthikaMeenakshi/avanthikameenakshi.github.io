@@ -1,18 +1,11 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import { loadPosts } from '../MediumPosts/actions';
 import ImageSection from '../ImageSection';
 import BlogNavBar from '../BlogNavBar';
 import { Progress } from 'reactstrap';
 import { Table } from 'reactstrap';
 
 class AboutPageContainer extends Component {
-    constructor(props) {
-        super(props);
-        props.loadPosts();
-    }
     render() {
-        console.log(this.props.posts);
         return (
             <div>
                 <BlogNavBar />
@@ -102,10 +95,10 @@ class AboutPageContainer extends Component {
                                 </tbody>
                             </Table>
                             <p>
-                                While I'm not coding or doing stuff related to tech, you can find me in reviewing a book <a href="https://www.goodreads.com/user/show/26453047-avanthika" target="_blank">online</a> or in a library. Or with my cat, Anjali. She's a 3 year old white "Bombay cat" (that's what they call native Indian cats), with beautiful yellow eyes.
+                                While I'm not coding or doing stuff related to tech, you can find me in reviewing a book <a target="_blank" rel="noopener noreferrer" href="https://www.goodreads.com/user/show/26453047-avanthika">online</a> or in a library. Or with my cat, Anjali. She's a 3 year old white "Bombay cat" (that's what they call native Indian cats), with beautiful yellow eyes.
                             </p>
                             <p>If you wish to connect with me, drop me an email or leave a message for me on facebook.
-                                I'm a millennial that doesn't like the tiny QWERTY touch-pad in my smart-phone, but I will get back.
+                                I'm rare species of millennial that doesn't like the tiny QWERTY touch-pad in my smart-phone, but I will get back.
                             </p>
                         </div>
                     </div>
@@ -115,35 +108,4 @@ class AboutPageContainer extends Component {
     }
 };
 
-{/* <Card>
-    {!isEmpty(this.props.posts) ?
-        (<div className="profile-section">
-            <img style={backgroundImageCss} src={`https://avatars1.githubusercontent.com/u/14136164?s=400&u=c7f452048e5f2f245ae7842209cae68e8155c18b&v=4`} alt="Avanthika Meenakshi" />
-            <div className="profile-meta">
-                <h1>{this.props.posts.user.name}</h1>
-                <h3>{this.props.posts.user.bio}</h3>
-            </div>
-            <div className="tag-container">
-                {map(this.props.posts.userMeta.authorTags, tag => {
-                    return (<span key={`${tag.postCount}tags`} className="tag-spacing">
-                        <Tag
-                            key={`${tag.slug}${tag.postCount}`}
-                        >
-                            {tag.name}
-                        </Tag>
-                    </span>)
-                })
-                }
-            </div>
-        </div>) : null}
-</Card> */}
-
-const mapStateToProps = state => ({
-    posts: state.mediumPosts.posts
-});
-
-const mapDispatchToProps = dispatch => ({
-    loadPosts: () => dispatch(loadPosts())
-});
-
-export default connect(mapStateToProps, mapDispatchToProps)(AboutPageContainer);
+export default AboutPageContainer;

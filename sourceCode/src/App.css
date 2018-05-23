@@ -27,6 +27,14 @@ body{
     margin-bottom: 40px;
 }
 
+.fa-stack-1x {
+    font-size: 15px !important;
+}
+
+footer a {
+    color: #212529 !important;
+}
+
 p{
     line-height:1.5;
     margin:30px 0
