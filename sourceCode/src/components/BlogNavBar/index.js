@@ -36,9 +36,9 @@ export default class BlogNavBar extends React.Component {
             <NavItem>
               <NavLink href="/about">About</NavLink>
             </NavItem>
-            <NavItem>
+            {/* <NavItem>
               <NavLink href="/contact">Contact</NavLink>
-            </NavItem>
+            </NavItem> */}
           </Nav>
         </Collapse>
       </Navbar>
