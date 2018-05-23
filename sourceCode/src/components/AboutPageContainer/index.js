@@ -3,6 +3,8 @@ import { connect } from 'react-redux';
 import { loadPosts } from '../MediumPosts/actions';
 import ImageSection from '../ImageSection';
 import BlogNavBar from '../BlogNavBar';
+import { Progress } from 'reactstrap';
+import { Table } from 'reactstrap';
 
 class AboutPageContainer extends Component {
     constructor(props) {
@@ -37,8 +39,70 @@ class AboutPageContainer extends Component {
                                 The amount of code I punch in is directly proportional to the coffee I consume.
                                 And a little truth: I cannot survive without stackoverflow.
                             </p>
+                            <p> I'm good at talking like Tyrion Lannister, other than that, I'm decent with the listed skills. </p>
+                            <Table borderless>
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Skill</th>
+                                        <th>Proficiency</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>JavaScript</td>
+                                        <td><Progress value={80} /></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>ReactJS</td>
+                                        <td><Progress value={80} /></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>Node.js</td>
+                                        <td><Progress value={90} /></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td>MySQL/Postgres</td>
+                                        <td><Progress value={50} /></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">5</th>
+                                        <td>Building APIs</td>
+                                        <td><Progress value={75} /></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">6</th>
+                                        <td>Building Chrome Extensions</td>
+                                        <td><Progress value={55} /></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">7</th>
+                                        <td>SocketIO/Firebase/web push notifications</td>
+                                        <td><Progress value={80} /></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">8</th>
+                                        <td>Payment gateways integration</td>
+                                        <td><Progress value={80} /></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">9</th>
+                                        <td>HTML</td>
+                                        <td><Progress value={80} /></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">10</th>
+                                        <td>SASS/SCSS</td>
+                                        <td><Progress value={50} /></td>
+                                    </tr>
+                                </tbody>
+                            </Table>
                             <p>
-                                While I'm not coding or doing stuff related to tech, you can find me in reviewing a book <a href="https://www.goodreads.com/user/show/26453047-avanthika" targer="_blank">online</a> or in a library. Or with my cat, Anjali. She's a 3 year old white "Bombay cat" (that's what they call native Indian cats), with beautiful yellow eyes.
+                                While I'm not coding or doing stuff related to tech, you can find me in reviewing a book <a href="https://www.goodreads.com/user/show/26453047-avanthika" target="_blank">online</a> or in a library. Or with my cat, Anjali. She's a 3 year old white "Bombay cat" (that's what they call native Indian cats), with beautiful yellow eyes.
                             </p>
                             <p>If you wish to connect with me, drop me an email or leave a message for me on facebook.
                                 I'm a millennial that doesn't like the tiny QWERTY touch-pad in my smart-phone, but I will get back.
