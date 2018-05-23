@@ -26,10 +26,9 @@ class AboutPageContainer extends Component {
                             </p>
                             <p>
                                 I'm a learner. I was that kid who was ridiculed for asking questions. Years down the lane, I aspire to architect solutions.
-                                I don't have the patience for positioning a "div" on the web-page, if you ignore that, you can count me for a full-stack developer.
-                                I go mad when code isn't aligned.
+                                I don't have the patience for positioning a "div" on the web-page, if you ignore that, with all the critical thinking and multi-tasking I boast of, you can count me for a full-stack developer.
                             </p>
-                            <p> I'm obsessed with coding, but I believe in thinking and planning before writing the code. I like keeping the code DRY.
+                            <p> I'm obsessed with coding, but I believe in thinking and planning before writing the code. I go mad when code isn't aligned. I like keeping the code DRY.
                                 The amount of code I punch in is directly proportional to the coffee I consume.
                                 And a little truth: I cannot survive without stackoverflow.
                             </p>
@@ -99,7 +98,7 @@ class AboutPageContainer extends Component {
                                 While I'm not coding or doing stuff related to tech, you can find me in reviewing a book <a target="_blank" rel="noopener noreferrer" href="https://www.goodreads.com/user/show/26453047-avanthika">online</a> or in a library. Or with my cat, Anjali. She's a 3 year old white "Bombay cat" (that's what they call native Indian cats), with beautiful yellow eyes.
                             </p>
                             <p>If you wish to connect with me, drop me an <a href="mailto:avanthika157@gmail.com">email</a> or leave a message for me on <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/avanthika.meenakshi">facebook</a>.
-                                I'm rare species of millennial that doesn't like the tiny QWERTY touch-pad in my smart-phone, but I will get back.
+                                I'm rare species of millennial that doesn't like using the tiny QWERTY touch-pad in my smart-phone, but I will get back.
                             </p>
                         </div>
                     </div>
