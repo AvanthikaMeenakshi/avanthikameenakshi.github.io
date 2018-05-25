@@ -34,7 +34,7 @@ export default class BlogNavBar extends React.Component {
               <a className="nav-link" target="_blank" rel="noopener noreferrer" href="https://github.com/AvanthikaMeenakshi">GitHub</a>
             </NavItem>
             <NavItem>
-              <NavLink href="/about">About</NavLink>
+              <NavLink href="/#/about">About</NavLink>
             </NavItem>
             {/* <NavItem>
               <NavLink href="/contact">Contact</NavLink>
