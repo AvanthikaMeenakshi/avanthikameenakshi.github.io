@@ -8,6 +8,7 @@ import AboutPageContainer from './components/AboutPageContainer';
 
 class App extends Component {
   render() {
+    console.log(process.env);
     return (
       <div>
         <Route exact path={`${process.env.PUBLIC_URL}/`} component={HomePageRenderer} />
