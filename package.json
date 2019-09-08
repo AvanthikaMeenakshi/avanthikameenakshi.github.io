@@ -4,7 +4,8 @@
   "description": "Personal portfolio",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --open --hot"
+    "start": "webpack-dev-server --open --hot",
+    "build": "webpack"
   },
   "keywords": [],
   "author": "Avanthika",
