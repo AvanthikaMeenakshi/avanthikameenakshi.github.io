@@ -4,13 +4,21 @@ var HtmlWebpackPlugin =  require('html-webpack-plugin');
 module.exports = {
     entry : './source/index.js',
     output : {
-        path : path.resolve(__dirname , '/'),
-        filename: 'bundle.js'
+      path: path.resolve(__dirname, "/"),
+      publicPath: "/",
+      filename: "bundle.js"
     },
     module : {
         rules : [
-            {test : /\.(js)$/, use:'babel-loader'},
-            {test : /\.css$/, use:['style-loader', 'css-loader']}
+            {test : /\.(js)$/, use:[
+      {
+        loader: 'babel-loader',
+        options: {
+          presets: ['@babel/react']
+        }
+      }
+    ]},
+            {test : /\.(css|sass|scss)$/, use:['style-loader', 'css-loader', 'sass-loader']}
         ]
     },
     mode:'development',
