@@ -86,18 +86,6 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./ComingSoon/index.js":
-/*!*****************************!*\
-  !*** ./ComingSoon/index.js ***!
-  \*****************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_particles_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-particles-js */ \"./node_modules/react-particles-js/lib/particles.js\");\n/* harmony import */ var react_particles_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_particles_js__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\nconst ComingSoon = () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n  className: \"coming-soon\"\n}, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_particles_js__WEBPACK_IMPORTED_MODULE_1___default.a, {\n  className: \"particles-wrapper\",\n  params: {\n    particles: {\n      number: {\n        value: 50\n      },\n      size: {\n        value: 3\n      },\n      color: {\n        value: \"#ff524e\"\n      }\n    },\n    interactivity: {\n      events: {\n        onhover: {\n          enable: true,\n          mode: \"repulse\"\n        }\n      }\n    }\n  }\n}), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"h1\", {\n  className: \"text-coming-soon\"\n}, \"Coming Soon!\"));\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (ComingSoon);\n\n//# sourceURL=webpack:///./ComingSoon/index.js?");
-
-/***/ }),
-
 /***/ "./Stylesheets/app.scss":
 /*!******************************!*\
   !*** ./Stylesheets/app.scss ***!
@@ -109,6 +97,54 @@ eval("var content = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs
 
 /***/ }),
 
+/***/ "./components/ComingSoon/index.js":
+/*!****************************************!*\
+  !*** ./components/ComingSoon/index.js ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_particles_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-particles-js */ \"./node_modules/react-particles-js/lib/particles.js\");\n/* harmony import */ var react_particles_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_particles_js__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\nconst ComingSoon = () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n  className: \"coming-soon\"\n}, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_particles_js__WEBPACK_IMPORTED_MODULE_1___default.a, {\n  className: \"particles-wrapper\",\n  params: {\n    particles: {\n      number: {\n        value: 50\n      },\n      size: {\n        value: 3\n      },\n      color: {\n        value: \"#ff524e\"\n      }\n    },\n    interactivity: {\n      events: {\n        onhover: {\n          enable: true,\n          mode: \"repulse\"\n        }\n      }\n    }\n  }\n}), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"h1\", {\n  className: \"text-coming-soon\"\n}, \"Coming Soon!\"));\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (ComingSoon);\n\n//# sourceURL=webpack:///./components/ComingSoon/index.js?");
+
+/***/ }),
+
+/***/ "./components/Footer/index.js":
+/*!************************************!*\
+  !*** ./components/Footer/index.js ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\n\nconst Footer = () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", null);\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Footer);\n\n//# sourceURL=webpack:///./components/Footer/index.js?");
+
+/***/ }),
+
+/***/ "./components/Header/index.js":
+/*!************************************!*\
+  !*** ./components/Header/index.js ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\n\nconst Header = () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", null);\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Header);\n\n//# sourceURL=webpack:///./components/Header/index.js?");
+
+/***/ }),
+
+/***/ "./components/Layout/index.js":
+/*!************************************!*\
+  !*** ./components/Layout/index.js ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Header */ \"./components/Header/index.js\");\n/* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Footer */ \"./components/Footer/index.js\");\n\n\n\n\nconst Layout = props => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Header__WEBPACK_IMPORTED_MODULE_1__[\"default\"], null), props.children, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Footer__WEBPACK_IMPORTED_MODULE_2__[\"default\"], null));\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Layout);\n\n//# sourceURL=webpack:///./components/Layout/index.js?");
+
+/***/ }),
+
 /***/ "./index.js":
 /*!******************!*\
   !*** ./index.js ***!
@@ -117,7 +153,7 @@ eval("var content = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _ComingSoon__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ComingSoon */ \"./ComingSoon/index.js\");\n/* harmony import */ var _Stylesheets_app_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Stylesheets/app.scss */ \"./Stylesheets/app.scss\");\n/* harmony import */ var _Stylesheets_app_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_Stylesheets_app_scss__WEBPACK_IMPORTED_MODULE_3__);\n\n\n\n\n\nconst App = () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ComingSoon__WEBPACK_IMPORTED_MODULE_2__[\"default\"], null);\n\nreact_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(App, null), document.getElementById('app'));\n\n//# sourceURL=webpack:///./index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _components_ComingSoon__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/ComingSoon */ \"./components/ComingSoon/index.js\");\n/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/Layout */ \"./components/Layout/index.js\");\n/* harmony import */ var _Stylesheets_app_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Stylesheets/app.scss */ \"./Stylesheets/app.scss\");\n/* harmony import */ var _Stylesheets_app_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_Stylesheets_app_scss__WEBPACK_IMPORTED_MODULE_4__);\n\n\n\n\n\n\nconst App = () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_3__[\"default\"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_ComingSoon__WEBPACK_IMPORTED_MODULE_2__[\"default\"], null));\n\nreact_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(App, null), document.getElementById('app'));\n\n//# sourceURL=webpack:///./index.js?");
 
 /***/ }),
 
