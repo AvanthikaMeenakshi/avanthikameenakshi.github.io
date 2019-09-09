@@ -6,22 +6,22 @@ const ComingSoon = () => (
     <Particles
         className="particles-wrapper"
         params={{
-          "particles": {
-              "number": {
-                  "value": 50,
+          particles: {
+              number: {
+                  value: 50,
               },
-              "size": {
-                  "value": 3
+              size: {
+                  value: 3
               },
-              "color": {
-                "value": "#ff524e"
+              color: {
+                value: "#ff524e"
               }
           },
-          "interactivity": {
-              "events": {
-                  "onhover": {
-                      "enable": true,
-                      "mode": "repulse"
+          interactivity: {
+              events: {
+                  onhover: {
+                      enable: true,
+                      mode: "repulse"
                   }
               }
           }
