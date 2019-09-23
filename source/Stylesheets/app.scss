@@ -1,5 +1,7 @@
+@import './variables.scss';
+
 html, body {
-  font-family: 'Playfair Display', serif !important;
+  font-family: $font-variable-name;
   padding: 0;
   margin: 0;
   height: 100%;
