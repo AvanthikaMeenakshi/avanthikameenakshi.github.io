@@ -2,12 +2,12 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
-module.exports = {
-  entry: "./index.js",
+module.exports = (env) => ({
+  entry: "./src/index.js",
   output: {
     filename: "[name].[hash].js",
     path: path.resolve(__dirname, "dist"),
-    publicPath: "dist/",
+    publicPath: "/",
   },
   optimization: {
     splitChunks: {
@@ -31,14 +31,24 @@ module.exports = {
         test: /\.(css|sass|scss)$/,
         use: ["style-loader", "css-loader", "sass-loader"],
       },
+      {
+        test: /\.(png|jpe?g|gif)$/i,
+        use: [
+          {
+            loader: "file-loader",
+          },
+        ],
+      }
     ],
   },
   mode: "development",
+  devServer: {
+    historyApiFallback: true,
+  },
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      template: "./app.html",
-      filename: "../index.html",
+      template: "./src/index.html",
     }),
   ],
-};
+});

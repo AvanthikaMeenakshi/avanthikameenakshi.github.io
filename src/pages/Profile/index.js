@@ -1,6 +1,7 @@
 import React from "react";
 import Typed from "react-typed";
 import Timeline from "../../components/Timeline";
+import ProfileImage from "../../assets/avanthika.jpg";
 import moment from "moment";
 
 const paragraphs = [
@@ -26,7 +27,7 @@ const ProfileInfo = () => (
     <div className="container">
       <div className="row personal-profile">
         <div className="col-md-4 personal-profile__avatar">
-          <img className="" src="../assets/avanthika.jpg" alt="avatar" />
+          <img src={ProfileImage} alt="avatar" />
         </div>
         <div className="col-md-8">
           <p className="personal-profile__name">
@@ -35,7 +36,9 @@ const ProfileInfo = () => (
           <p className="personal-profile__work">
             Fullstack Javacript Developer
           </p>
-          {paragraphs.map(content => <p>{content}</p>)}
+          {paragraphs.map((content) => (
+            <p>{content}</p>
+          ))}
           <p>
             If you wish to connect with me, drop me an{" "}
             <a href="mailto:avanthika157@gmail.com">email</a> or leave a message
