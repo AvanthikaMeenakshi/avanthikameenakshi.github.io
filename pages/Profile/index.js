@@ -3,6 +3,24 @@ import Typed from "react-typed";
 import Timeline from "../../components/Timeline";
 import moment from "moment";
 
+const paragraphs = [
+  "I'm a programmer and a learner. I was that kid who was ridiculed for asking \
+  questions. Years down the lane, I aspire to architect solutions. I'm obsessed \
+  with coding, but I believe in thinking and planning before writing \
+  the code. I go mad when code isn't aligned. I like keeping the code \
+  DRY. The amount of code I punch in is directly proportional to the \
+  tea I consume. I cannot survive without stackoverflow.",
+  ` While I'm not coding or doing stuff related to tech, you can find me reviewing a book ${(
+    <a
+      target="_blank"
+      rel="noopener noreferrer"
+      href="https://www.goodreads.com/user/show/26453047-avanthika"
+    >
+      online
+    </a>
+  )} or in a library. Or spending time with my cat, Anjali. She's a{" "} {moment().diff('2012-10-02', 'years', false)} year old white cat with beautiful yellow eyes.`,
+];
+
 const ProfileInfo = () => (
   <>
     <div className="container">
@@ -17,27 +35,7 @@ const ProfileInfo = () => (
           <p className="personal-profile__work">
             Fullstack Javacript Developer
           </p>
-          <p>
-            I'm a programmer and a learner. I was that kid who was ridiculed for asking
-            questions. Years down the lane, I aspire to architect solutions. I'm obsessed
-            with coding, but I believe in thinking and planning before writing
-            the code. I go mad when code isn't aligned. I like keeping the code
-            DRY. The amount of code I punch in is directly proportional to the
-            tea I consume. I cannot survive without stackoverflow.
-          </p>
-          <p>
-            While I'm not coding or doing stuff related to tech, you can find me
-            reviewing a book{" "}
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.goodreads.com/user/show/26453047-avanthika"
-            >
-              online
-            </a>{" "}
-            or in a library. Or spending time with my cat, Anjali. She's a{" "}
-            {moment().diff('2012-10-02', 'years', false)} year old white cat with beautiful yellow eyes.
-          </p>
+          {paragraphs.map(content => <p>{content}</p>)}
           <p>
             If you wish to connect with me, drop me an{" "}
             <a href="mailto:avanthika157@gmail.com">email</a> or leave a message
