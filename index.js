@@ -1,12 +1,19 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Layout from "./components/Layout";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Profile from "./pages/Profile";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Stylesheets/app.scss";
 
 const App = () => (
-  <Layout>
-  </Layout>
+  <Router>
+    <Layout>
+      <Switch>
+        <Route path="/" component={Profile} />
+      </Switch>
+    </Layout>
+  </Router>
 );
 
 ReactDOM.render(<App />, document.getElementById("app"));

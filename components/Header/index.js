@@ -1,5 +1,4 @@
 import React from 'react';
-import ProfileInfo from "./ProfileInfo";
 
 const Header = () => (
   <div className="container-fluid header-bg">
@@ -38,7 +37,6 @@ const Header = () => (
         </div>
       </div>
     </div>
-    <ProfileInfo />
   </div>
 );
 
