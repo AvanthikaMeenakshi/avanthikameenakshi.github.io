@@ -13,6 +13,13 @@ html, body {
   background: linear-gradient(to right, #ff6a00, #ee0979); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+.heading {
+  font-size: 44px;
+  line-height: 50px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
 .menu {
   &__wrapper {
     display: none;
@@ -55,37 +62,35 @@ html, body {
 }
 
 .personal-profile {
+  margin-top: 40px;
   &__avatar {
     img {
       border-radius: 5px;
       box-shadow: 0 0 27px rgba(96,96,96,.34);
-      width: 90%;
       height: 310px;
-      -o-object-fit: cover;
       object-fit: cover;
       margin-top: 10px;
       position: relative;
-      top: 40px;
     }
   }
   &__name {
-    font-size: 44px;
-    line-height: 50px;
-    font-weight: 700;
-    margin-top: 40px;
-    margin-bottom: 10px;
+    @extend .heading;
   }
   &__social {
     a {
       font-size: 24px;
       margin-right: 15px;
       opacity: .4;
+      color: black;
     }
+  }
+  p {
+    margin-bottom: 10px;
   }
 }
 
 .timeline {
-  margin-top: 100px;
+  margin-top: 40px;
   .timeline-container {
     display: flex;
     flex-direction: column;

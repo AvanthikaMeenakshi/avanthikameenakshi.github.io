@@ -8,9 +8,6 @@ const Header = () => (
           <nav className="">
             <ul>
               <li>
-                <a href="#hello">Hello</a>
-              </li>
-              <li>
                 <a href="#resume">Resume</a>
               </li>
               <li>
@@ -20,7 +17,7 @@ const Header = () => (
                 <a href="#testimonials">Testimonials</a>
               </li>
               <li>
-                <a href="#blog">Blog</a>
+                <a href="/blog">Blog</a>
               </li>
               <li>
                 <a href="#contact">Contact</a>
