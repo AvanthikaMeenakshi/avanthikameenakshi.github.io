@@ -38,12 +38,18 @@ module.exports = (env) => ({
             loader: "file-loader",
           },
         ],
-      }
+      },
     ],
   },
   mode: "development",
   devServer: {
     historyApiFallback: true,
+    proxy: {
+      "/api": {
+        target: "http://[::1]:3000/",
+        changeOrigin: true,
+      },
+    },
   },
   plugins: [
     new CleanWebpackPlugin(),

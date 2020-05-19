@@ -11,7 +11,9 @@
   "author": "Avanthika",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.19.2",
     "bootstrap": "^4.4.1",
+    "dompurify": "^2.0.11",
     "moment": "^2.25.3",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",

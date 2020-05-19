@@ -20,6 +20,9 @@ const Header = () => (
                 <a href="/blog">Blog</a>
               </li>
               <li>
+                <a href="/books">Book Reviews</a>
+              </li>
+              <li>
                 <a href="#contact">Contact</a>
               </li>
             </ul>
