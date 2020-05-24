@@ -1,13 +1,13 @@
 import React from 'react';
 import Header from '../Header';
-import Footer from '../Footer';
 
 const Layout = (props) => (
-  <>
-    <Header />
-    {props.children}
-    <Footer />
-  </>
+  <main className="main">
+    <div className="sidebar">
+      <Header />
+    </div>
+    <div className="main-content">{props.children}</div>
+  </main>
 );
 
 export default Layout;

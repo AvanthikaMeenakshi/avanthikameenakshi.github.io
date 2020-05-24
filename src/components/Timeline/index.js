@@ -1,21 +1,26 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Timeline = ({ children }) => {
   return <div className="timeline-container">{children}</div>;
 };
 
-Timeline.Item = () => {
-  return (
-    <div className="timeline-item">
-      <div className="timeline-item-line"></div>
-      <div className="timeline-head"></div>
-      <div className="timeline-content">
-        Solve initial network problems 2015-09-01 Solve initial network problems
-        2015-09-01 Solve initial network problems 2015-09-01 Solve initial
-        network problems 2015-09-01
-      </div>
+const TimelineItem = ({ side, content }) => (
+  <div className={`timeline-item timeline-item-${side}`}>
+    <div className="timeline-content">
+      
     </div>
-  );
+  </div>
+);
+
+TimelineItem.propTypes = {
+  side: PropTypes.string
 };
+
+TimelineItem.defaultProps = {
+  side: 'left'
+};
+
+Timeline.Item = TimelineItem;
 
 export default Timeline;
