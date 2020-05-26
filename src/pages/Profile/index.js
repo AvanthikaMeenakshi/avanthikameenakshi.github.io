@@ -7,14 +7,11 @@ import { staticContent, workExp } from '../../utils';
 const IntroSection = () => (
   <div className="container">
     <div className="row resume">
-      <div className="col-md-4 about__avatar">
-        <img src={profilePicture} alt="avanthika" />
-      </div>
-      <div className="col-md-8 about__description">
+      <div className="col-md-12 about__description">
         <h1 className="heading">
           <Typed strings={['Avanthika_']} typeSpeed={70} />
         </h1>
-        <p className="about__work">Fullstack Javacript Developer</p>
+        <p className="about__work">I enjoy coffee, coding, cats!</p>
         {staticContent.map((content) => content)}
       </div>
     </div>

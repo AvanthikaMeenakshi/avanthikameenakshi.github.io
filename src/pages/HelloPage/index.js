@@ -1,24 +1,25 @@
 import React from 'react';
-import { socialLinks, particlesSettings } from '../../utils';
-import Particles from 'react-particles-js';
+import { staticContent } from '../../utils';
 
 const IntroSection = () => (
   <div className="main-page">
-    <div className="personal-profile">
-      <Particles height="100vh" params={particlesSettings} />
+    <div style={{ height: '100vh' }} className="personal-profile">
       <div className="personal-profile__wrapper">
-        <p className="personal-profile__name">Hi, I am Avanthika</p>
-        <p className="personal-profile__about">
-          I am a fullstack javascript developer. I provide clean code and pixel
-          perfect design. I loose sense of space and time to fall into the rabbit
-          hole of debugging.
-        </p>
-
-        <p className="personal-profile__social">
-          {socialLinks.github}
-          {socialLinks.linkedInIcon}
-          {socialLinks.facebookIcon}
-        </p>
+        <span className="wave">👋</span>
+        <span className="personal-profile__name">Hi, I am Avanthika</span>
+        <p className="personal-profile__about">Fullstack javascript developer</p>
+        <div className="personal-profile__desc">
+          {staticContent.map((content) => content)}
+        </div>
+        <div className="m-30 heading">
+          Let&apos;s work together on your next project
+        </div>
+        <a
+          className="desc-links heading-link"
+          href="mailto:hello@avanthikameenakshi.com"
+        >
+          hello@avanthikameenakshi.com
+        </a>
       </div>
     </div>
   </div>
