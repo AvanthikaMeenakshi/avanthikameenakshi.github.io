@@ -1,0 +1,130 @@
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  transform: translateX(0);
+  height: 100vh;
+  width: 300px;
+  background: $main-sidebar-dark;
+  z-index: 10;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+  .sidebar-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    overflow: hidden;
+    overflow-y: auto;
+
+    .sidebar-footer {
+      position: absolute;
+      bottom: 0;
+      padding: 30px 15px;
+      width: 100%;
+      a {
+        font-size: 22px;
+        color: #fff;
+        opacity: 0.8;
+        margin-left: 15px;
+        &:hover,
+        &:active,
+        &:focus {
+          opacity: 1;
+        }
+      }
+      img {
+        width: 48px;
+        border-radius: 50%;
+        filter: grayscale(1);
+      }
+    }
+  }
+}
+
+.sidebar-menu {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+  .menu {
+    text-align: center;
+    -webkit-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+    a {
+      letter-spacing: 2.2px;
+      display: block;
+      padding: 15px 0;
+      color: $snow-white;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 28px;
+      font-weight: 300;
+      &:hover,
+      &:active,
+      &:focus {
+        text-decoration: none;
+      }
+    }
+    &:hover,
+    &:active,
+    &:focus {
+      opacity: 0.4;
+      background: #353536f5;
+    }
+  }
+  .menu-active {
+    opacity: 0.4;
+    background: #353536f5;
+  }
+}
+
+.toggle-menu {
+  display: none;
+}
+
+@media only screen and (max-width: 1023px) {
+  .sidebar {
+    display: none;
+  }
+  .main-content {
+    padding: 25px;
+  }
+
+  .toggle-menu {
+    display: block;
+    position: relative;
+    padding: 30px 30px 0;
+    .toggler {
+      background: transparent;
+      box-shadow: none;
+      font-size: 1.5rem;
+      color: $snow-white;
+      border: 0px;
+      padding: 0px;
+      &:hover,
+      &:active,
+      &:focus {
+        outline: none;
+        border: 0px;
+      }
+    }
+    .collapse, .collapsing {
+      position: absolute;
+      background: $main-sidebar-dark;
+      z-index: 2;
+      top: 70px;
+      left: 30px;
+      right: 30px;
+      .menu {
+        text-align: left;
+        a {
+          padding: 15px;
+        }
+      }
+    }
+  }
+}

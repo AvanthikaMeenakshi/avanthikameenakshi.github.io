@@ -5,9 +5,9 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Hello from './pages/HelloPage';
 import Profile from './pages/Profile';
 import Blog from './pages/Blog';
-import Books from './pages/Books';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './Stylesheets/app.scss';
+import './scss/app.scss';
 
 const App = () => (
   <Router>
@@ -16,7 +16,6 @@ const App = () => (
         <Route exact path="/" component={Hello} />
         <Route exact path="/resume" component={Profile} />
         <Route exact path="/blog" component={Blog} />
-        <Route exact path="/books" component={Books} />
       </Switch>
     </Layout>
   </Router>

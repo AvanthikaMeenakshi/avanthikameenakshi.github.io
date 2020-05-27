@@ -1,18 +1,15 @@
 import React from 'react';
 import Typed from 'react-typed';
 import Timeline from '../../components/Timeline';
-import profilePicture from '../../assets/avanthika.jpg';
 import { staticContent, workExp } from '../../utils';
 
 const IntroSection = () => (
   <div className="container">
-    <div className="row resume">
-      <div className="col-md-12 about__description">
+    <div className="row">
+      <div className="col-md-12">
         <h1 className="heading">
           <Typed strings={['Avanthika_']} typeSpeed={70} />
         </h1>
-        <p className="about__work">I enjoy coffee, coding, cats!</p>
-        {staticContent.map((content) => content)}
       </div>
     </div>
   </div>

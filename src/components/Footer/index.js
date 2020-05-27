@@ -1,6 +1,6 @@
 import React from 'react';
 import profilePicture from '../../assets/avanthika.jpg';
-import { socialLinks } from "../../utils";
+import { socialLinks } from '../../utils';
 
 const Footer = () => (
   <div className="sidebar-footer">
