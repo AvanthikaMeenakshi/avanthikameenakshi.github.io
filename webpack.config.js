@@ -6,7 +6,7 @@ module.exports = () => ({
   entry: './src/index.js',
   output: {
     filename: '[name].[hash].js',
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'public'),
     publicPath: '/',
   },
   optimization: {
@@ -43,7 +43,7 @@ module.exports = () => ({
   },
   mode: 'development',
   devServer: {
-    historyApiFallback: true
+    historyApiFallback: true,
   },
   plugins: [
     new CleanWebpackPlugin(),
