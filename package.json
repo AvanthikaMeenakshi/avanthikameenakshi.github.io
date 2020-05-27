@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --open --watch --hot",
-    "build": "webpack"
+    "build": "webpack",
+    "heroku-prebuild": "npm install --dev",
+    "heroku-postbuild": "npm run build"
   },
   "keywords": [],
   "author": "Avanthika",
