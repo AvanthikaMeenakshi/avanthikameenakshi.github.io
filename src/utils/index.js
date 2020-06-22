@@ -27,14 +27,14 @@ export const socialLinks = {
       email
     </a>
   ),
-  facebook: (
+  linkedin: (
     <a
       target="_blank"
       className="desc-links"
       rel="noopener noreferrer"
-      href="https://www.facebook.com/avanthika.meenakshi"
+      href="https://www.linkedin.com/in/avanthika-meenakshi-41b105b2/"
     >
-      facebook
+      linkedin
     </a>
   ),
   goodreads: (
@@ -58,7 +58,7 @@ export const socialLinks = {
   ),
   twitterIcon: (
     <a
-      href="https://github.com/AvanthikaMeenakshi"
+      href="https://twitter.com/AvanthikaMeenu"
       rel="noopener noreferrer"
       target="_blank"
     >
@@ -85,7 +85,7 @@ export const socialLinks = {
   ),
   mediumIcon: (
     <a
-      href="https://www.facebook.com/avanthika.meenakshi"
+      href="https://medium.com/@avanthikameenakshi"
       rel="noopener noreferrer"
       target="_blank"
     >
@@ -94,7 +94,7 @@ export const socialLinks = {
   ),
   stackoverflowIcon: (
     <a
-      href="https://www.facebook.com/avanthika.meenakshi"
+      href="https://stackoverflow.com/users/7089383/avanthika"
       rel="noopener noreferrer"
       target="_blank"
     >
@@ -122,7 +122,7 @@ export const staticContent = [
   <p key="info-3">
     If you wish to connect with me, drop me an {socialLinks.email} - I&apos;m
     quick when it comes to responding to emails. Or leave a message for me on{' '}
-    {socialLinks.facebook}. I&apos;m rare species of millennial that
+    {socialLinks.linkedin}. I&apos;m rare species of millennial that
     doesn&apos;t like using the tiny QWERTY touch-pad in my smart-phone, but I
     will get back.
   </p>,
