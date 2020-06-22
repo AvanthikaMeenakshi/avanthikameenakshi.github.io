@@ -1,39 +1,53 @@
 .timeline-container {
     width: 100%;
     position: relative;
-    margin: -10px;
-    &::after {
-        content: '';
-        position: absolute;
-        border: 1px solid #f0f0f0;
-        top: 0;
-        bottom: 0;
-        left: 50%;
-        margin-left: -3px;
-    }
+    margin-left: 10px;
     .timeline-item {
-        padding: 10px;
+        padding: 0 30px 30px;
         position: relative;
-        width: 50%;
-        &::after {
-           content: '';
+        .timeline-icon {
             position: absolute;
-            width: 10px;
-            height: 10px;
-            right: -3px;
-            border: 2px solid #1890ff;
-            top: 17px;
+            border: 2px solid rgba(240, 240, 240, 0.12);
+            padding: 9px 7px;
+            font-size: 12px;
+            left: -17.5px;
+            right: unset;
+            top: 0px;
             border-radius: 50%;
+            background: #151515;
+            color: rgba(255, 255, 255, 0.5);
             z-index: 1;
         }
+        &::after {
+            content: '';
+            position: absolute;
+            border: 1px solid rgba(240, 240, 240, 0.12);
+            top: 0;
+            bottom: 0;
+            left: 0;
+        }
+        &:last-child {
+            padding: 0 30px;
+        }
+    }
+    .timeline-subtitle {
+        opacity: 0.8;
+        font-weight: 400;
+    }
+    .timeline-content {
+        font-weight: 300;
+        font-size: 14px;
+        opacity: 0.6;
+        overflow: hidden;
     }
     .timeline-item-left {
         left: 0;
+        padding-right: 30px;
     }
-    .timeline-item-right {
-        left: 50%;
-        &::after {
-            left: -7px;
-        }
+    .timeline-show-link {
+        font-size: 12px;
+    }
+    .timeline-skills {
+        margin-bottom: 0.5rem;
     }
 }

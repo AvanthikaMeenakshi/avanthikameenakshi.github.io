@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import Layout from './components/Layout';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Hello from './pages/HelloPage';
-import Profile from './pages/Profile';
+import ResumeAndTimeline from './pages/ResumeAndTimeline';
 import Blog from './pages/Blog';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -14,7 +14,7 @@ const App = () => (
     <Layout>
       <Switch>
         <Route exact path="/" component={Hello} />
-        <Route exact path="/resume" component={Profile} />
+        <Route exact path="/resume" component={ResumeAndTimeline} />
         <Route exact path="/blog" component={Blog} />
       </Switch>
     </Layout>

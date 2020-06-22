@@ -1,0 +1,44 @@
+.skills-section {
+    display: flex;
+    color: $snow-white-text;
+    .section {
+        width: 100%;
+    }
+    .progress {
+        height: 6px;
+        margin-bottom: 30px;
+        opacity: 0.7;
+        background: #333030;
+        .progress-bar {
+            background: white;
+        }
+    }
+    .progress-skill-title {
+        font-size: 11px;
+        line-height: 20px;
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+        margin-bottom: 5px;
+        display: flex;
+        .skill-display {
+            flex: 1;
+        }
+    }
+}
+
+.resume-title {
+    margin: 2.5rem 0;
+    letter-spacing: 1.3px;
+    position: relative;
+}
+
+.resume-content {
+    color: $snow-white-text;
+}
+
+.badge-secondary {
+    color: $snow-white-text;
+    background-color: transparent;
+    font-weight: 300;
+    border: 1px solid $snow-white-text;
+}
