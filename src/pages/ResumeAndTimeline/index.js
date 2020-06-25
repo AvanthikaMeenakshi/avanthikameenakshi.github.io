@@ -95,12 +95,15 @@ const ProbonoConsulting = () => {
       <Timeline>
         <Timeline.Item
           key={'thinkful'}
-          title={'Mentor'}
+          title={'Thinkful'}
+          subtitle={'Mentor'}
           side={'left'}
           content={
             <div className="timeline-skills">
-              I mentor engineering immersion, web technology courses and full stack web development courses on Thinkful. 
-              I've mentored and trained around 50 students so far, Im proud about this job of mine.
+              I mentor engineering immersion, web technology courses and full
+              stack web development courses on Thinkful. I've mentored and
+              trained around 50 students so far, Im proud about this job of
+              mine.
             </div>
           }
         />
