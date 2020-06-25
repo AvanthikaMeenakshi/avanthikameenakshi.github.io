@@ -12,15 +12,15 @@ const pages = [
   {
     title: 'Resume',
     path: '/resume',
-  },
-  {
-    title: 'Blog',
-    path: '/blog',
-  },
-  {
-    title: 'Contact',
-    path: '/contact',
-  },
+  }
+  // {
+  //   title: 'Blog',
+  //   path: '/blog',
+  // },
+  // {
+  //   title: 'Contact',
+  //   path: '/contact',
+  // },
 ];
 
 const Menu = ({ isActive, pathname, setIsToggleMenuExpanded }) => (

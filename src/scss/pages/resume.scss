@@ -76,4 +76,11 @@
   .card-resume {
     width: 100% !important;
   }
+
+  .skills-section {
+    flex-wrap: wrap;
+    .section {
+      margin: 0 !important;
+    }
+  }
 }

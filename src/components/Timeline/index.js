@@ -5,7 +5,7 @@ const Timeline = ({ children }) => {
   return <div className="timeline-container">{children}</div>;
 };
 
-const TimelineItem = ({ side, title, subtitle, content }) => {
+const TimelineItem = ({ side, title, subtitle, content, dates }) => {
   return (
     <div className={`timeline-item timeline-item-${side}`}>
       <h5>
@@ -13,6 +13,7 @@ const TimelineItem = ({ side, title, subtitle, content }) => {
         {title}
       </h5>
       <h6 className="timeline-subtitle">{subtitle}</h6>
+      <div className="timeline-dates">{dates}</div>
       <div className="timeline-content">{content}</div>
     </div>
   );

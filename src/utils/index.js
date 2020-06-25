@@ -132,6 +132,7 @@ export const workExp = {
   ebay: {
     companyName: 'eBay Inc',
     role: 'Full stack developer',
+    dates: 'Jun 2020 - Present',
     skills: [
       'react',
       'react-hooks',
@@ -160,6 +161,7 @@ export const workExp = {
   headforwards: {
     companyName: 'Headforwards',
     role: 'Frontend Javascript Developer',
+    dates: 'Jun 2019 - Jun 2020',
     skills: [
       'react',
       'react-hooks',
@@ -184,6 +186,7 @@ export const workExp = {
   apiary: {
     companyName: 'Apiary Technologies India Pvt Ltd.,',
     role: 'Senior Software Engineer',
+    dates: 'Jan 2018 - Jun 2019',
     skills: [
       'react',
       'react-hooks',
@@ -215,6 +218,7 @@ export const workExp = {
   developscripts: {
     companyName: 'Developscripts LLC',
     role: 'Product Engineer',
+    dates: 'Sep 2016 - Oct 2017',
     skills: [
       'react',
       'jQuery',
@@ -238,6 +242,7 @@ export const workExp = {
     companyName: 'Skcript',
     role: 'Product Engineer',
     skills: ['react', 'HTML', 'CSS', 'SCSS/SASS'],
+    dates: 'Oct 2017 - Jan 2018',
     workDetails: [
       'Kick started my career at Skcript as an Intern and secured position as Front-End Engineer. Worked extensively and learnt a lot of technologies. Worked as JavaScript developer and learnt React JS. Used React JS along with Ruby on Rails.',
       'Worked on the following projects: allt.in, shrink.in, ILTB, SocialX.',
