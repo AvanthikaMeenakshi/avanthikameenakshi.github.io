@@ -1,0 +1,19 @@
+[
+  { "skill": "react", "percent": 90 },
+  { "skill": "node.js", "percent": 90 },
+  { "skill": "javascript", "percent": 70 },
+  { "skill": "jQuery", "percent": 60 },
+  { "skill": "TypeScript", "percent": 70 },
+  { "skill": "Postgresql", "percent": 80 },
+  { "skill": "Mongo", "percent": 50 },
+  { "skill": "MySQL", "percent": 80 },
+  { "skill": "GraphQL", "percent": 70 },
+  { "skill": "Python", "percent": 40 },
+  { "skill": "Go", "percent": 20 },
+  { "skill": "HTML", "percent": 70 },
+  { "skill": "CSS/SCSS/SASS", "percent": 70 },
+  { "skill": "Vue", "percent": 40 },
+  { "skill": "Svelte", "percent": 30 },
+  { "skill": "Test driven development", "percent": 80 },
+  { "skill": "REST", "percent": 70 }
+]

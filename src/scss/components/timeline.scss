@@ -50,6 +50,14 @@
     .timeline-skills {
         margin: 0.5rem 0;
     }
+    .projects {
+        margin: 1rem 0;
+        font-size: 13px;
+        .project-title {
+            font-size: 13px;
+            text-transform: uppercase;
+        }
+    }
     .timeline-dates {
         font-size: 12px;
         opacity: 0.6;

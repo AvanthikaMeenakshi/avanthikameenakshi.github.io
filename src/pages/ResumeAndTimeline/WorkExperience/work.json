@@ -1,0 +1,182 @@
+{
+  "ebay": {
+    "companyName": "eBay Inc",
+    "role": "Full stack developer",
+    "dates": "Jun 2020 - Present",
+    "skills": [
+      "react",
+      "react-hooks",
+      "typescript",
+      "redux",
+      "context",
+      "Java",
+      "Kotlin",
+      "Ruby",
+      "Capybara",
+      "Marko.js",
+      "Node.js",
+      "Mocha",
+      "Chai",
+      "Enzyme",
+      "React Testing library",
+      "SASS/LESS"
+    ],
+    "projects": [
+      {
+        "client": "Shipping and label printing services",
+        "workDetails": [
+          "Working on the modules that allows ebay sellers and buyers to choose shipping services, print labels and file return claims", 
+          "Working on TTD with react, react hooks, redux in the shipping portal",
+          "Learnt a open-source framework called Marko.js for building microservices",
+          "Learning java and kotlin to understand the backend better",
+          "Using Ruby and Capybara to do end-to-end integration test cases",
+          "Actively pair-programming with colleagues to understand the vast architecture."
+        ]
+      }
+    ]
+  },
+  "headforwards": {
+    "companyName": "Headforwards",
+    "role": "Frontend Javascript Developer",
+    "dates": "Jun 2019 - Jun 2020",
+    "skills": [
+      "react",
+      "react-hooks",
+      "redux",
+      "context",
+      "Enzyme",
+      "SASS",
+      "React Testing library",
+      "node.js",
+      "micro front-end architecture",
+      "cypress"
+    ],
+    "projects": [
+      {
+        "client": "Nexcenter and Insightful Dashboard",
+        "workDetails": [
+          "Nexcenter project allows datacenters to manage their facilities and deliveries better.", 
+          "Insightful Dashboard project grants datacenter users tools to customize, build and visualise data",
+          "Did TTD with react, react hooks, redux and vanilla javascript to build the apps",
+          "Worked with micro-frontend architecture",
+          "Built reusable npm packages(internal) for the microfrontend apps",
+          "Refactored and maintained code standards. Helped keeping the code DRY. Actively reviewed code."
+        ]
+      }
+    ]
+  },
+  "apiary": {
+    "companyName": "Apiary Technologies India Pvt Ltd",
+    "role": "Senior Software Engineer",
+    "dates": "Jan 2018 - Jun 2019",
+    "skills": [
+      "react",
+      "react-hooks",
+      "graphql",
+      "redux",
+      "context",
+      "kafka",
+      "postgresql",
+      "MySQL",
+      "redis",
+      "Supertest",
+      "Mocha",
+      "Chai",
+      "Enzyme",
+      "SASS"
+    ],
+    "projects": [
+      {
+        "client": "Iodine Software",
+        "workDetails": [
+          "We built a healthcare app from scratch that prioritizes EMRs",
+          "Worked with express, graphql server, kafka, java services and postgresql",
+          "Built the front-end with react, graphql-client and react hooks",
+          "Used TDD across both the stacks",
+          "Maintained, reviewed & refactored code standards."
+        ]
+      },
+      {
+        "client": "RFCode",
+        "workDetails": [
+          "We worked customizable dashboards for real time asset management and environmental conditions management in datacenters",
+          "Worked with react, redux and focused on TDD",
+          "Used WebRTC APIs to build video monitoring of assets in datacenters",
+          "Worked on understanding the legacy APIs to migrate them to node.js",
+          "Collaborated across timezones, actively contributed in sprint plannings and worked closely with graphic designers to visualise data better."
+        ]
+      }
+    ]
+  },
+  "developscripts": {
+    "companyName": "Auction Software",
+    "role": "Product Engineer",
+    "dates": "Sep 2016 - Oct 2017",
+    "skills": [
+      "node.js",
+      "express.js",
+      "socket.io",
+      "mysql",
+      "mongo",
+      "react.js",
+      "jQuery",
+      "SASS",
+      "SCSS"
+    ],
+    "projects": [
+      {
+        "client": "Forward Auction, Reverse Auction & Silent Auction",
+        "workDetails": [
+          "Wored on core APIs that deals with ebay style auctioning, freelancer style bidding and charity auctions",
+          "Migrated products from PHP-MySQL to NodeJS-MongoDB",
+          "Worked a lot with jQuery and vanilla Javascript apps, then migrated the apps to React.js",
+          "Worked closely with designers to convert illustrations to fully functional templates",
+          "Architected an API server which handled thousands of biddings every second"
+        ]
+      },
+      {
+        "client": "Agribay | Duavivo | Silbuy | NDTV Mojarto",
+        "workDetails": [
+          "Ebay style bidding apps that helps customers to sell their products through bidding and buy now options",
+          "Built node.js apps working with ejs templating engine and javascript"
+        ]
+      },
+      {
+        "client": "Payments and bidding APIs",
+        "workDetails": [
+          "We built an API server with licensing for customers to renew their licensing every year",
+          "Built an dashboard to provide insight of how the APIs are consumed and monitors traffic",
+          "Built standalone APIs which when licensed allows customers to integrate with their existing site to handle payments and bidding"
+        ]
+      },
+      {
+        "client": "DIY stores API",
+        "workDetails": [
+          "Built drag and drop interface where customers can create stores to list their products",
+          "Mainly worked on the DIY modules in the front-end to handle drag and drop gestures"
+        ]
+      }
+    ]
+  },
+  "skcript": {
+    "companyName": "Skcript",
+    "role": "User Experience Intern/Engineer",
+    "dates": "Jan 2016 - Aug 2016",
+    "skills": [
+      "jQuery",
+      "react.js",
+      "SASS/SCSS",
+      "Ruby on Rails",
+      "HTML"
+    ],
+    "projects": [
+      {
+        "client": "Shrink",
+        "workDetails": [
+          "I learnt programming languages at Skcript",
+          "The internship help me catch up with the industry, I learnt to work with React, jQuery and built small APIs with Ruby on Rails"
+        ]
+      }
+    ]
+  }
+}
