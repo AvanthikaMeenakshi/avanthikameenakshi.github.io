@@ -23,7 +23,7 @@ const pages = [
   // },
 ];
 
-const Menu = ({ isActive, pathname, setIsToggleMenuExpanded }) => (
+const Menu = ({ isActive, pathname }) => (
   <ul className="sidebar-menu">
     {pages.map((page) => (
       <li
@@ -31,9 +31,6 @@ const Menu = ({ isActive, pathname, setIsToggleMenuExpanded }) => (
         className={`menu ${
           isActive && page.path === pathname ? 'menu-active' : ''
         }`}
-        onClick={() => {
-          setIsToggleMenuExpanded(false);
-        }}
       >
         <Link to={page.path}>{page.title}</Link>
       </li>
