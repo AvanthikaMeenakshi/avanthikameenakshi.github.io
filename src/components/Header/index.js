@@ -12,11 +12,11 @@ const pages = [
   {
     title: 'Resume',
     path: '/resume',
-  }
-  // {
-  //   title: 'Blog',
-  //   path: '/blog',
-  // },
+  },
+  {
+    title: 'Blog',
+    path: '/blog',
+  },
   // {
   //   title: 'Contact',
   //   path: '/contact',

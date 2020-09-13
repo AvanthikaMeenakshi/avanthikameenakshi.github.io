@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Card, CardImg } from 'reactstrap';
-import Truncate from 'react-truncate-html';
+import truncate from 'truncate-html';
 
 const getMediumPosts = axios.get(
   'https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@avanthikameenakshi'
@@ -47,7 +47,12 @@ const Blog = () => {
             <span className="language">{post.language}</span>
             <h6>{post.title}</h6>
             {post.isMedium ? (
-              <p className="description">dkdkldjkd</p>
+              <div
+                className="description"
+                dangerouslySetInnerHTML={{
+                  __html: truncate(post.description, 175),
+                }}
+              />
             ) : (
               <p
                 className="description"

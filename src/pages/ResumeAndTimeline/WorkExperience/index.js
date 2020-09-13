@@ -56,7 +56,7 @@ const WorkExperience = () => {
                     className="timeline-show-link"
                     onClick={() => toggleShow(workplace)}
                   >
-                    Show {expandedExperiences[workplace] ? 'less' : 'more'}
+                    Read {expandedExperiences[workplace] ? 'less' : 'more'}
                   </a>
                 </>
               }

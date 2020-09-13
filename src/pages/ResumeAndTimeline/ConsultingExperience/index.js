@@ -20,6 +20,17 @@ const ProbonoConsulting = () => {
             </div>
           }
         />
+        <Timeline.Item
+          key={'tamilstudiesuk'}
+          title={'Tamil Studies UK'}
+          subtitle={'Providing software help'}
+          side={'left'}
+          content={
+            <div className="timeline-skills">
+              I volunteered to provide software help to the team that&apos;s trying to open up Tamil Language & Literature department in SOAS London.
+            </div>
+          }
+        />
       </Timeline>
     </>
   );

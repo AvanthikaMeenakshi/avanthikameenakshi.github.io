@@ -37,10 +37,11 @@
 }
 
 .badge-secondary {
-  color: $snow-white-text;
+  color: $snow-white;
   background-color: transparent;
   font-weight: 300;
-  border: 1px solid $snow-white-text;
+  border: 1px solid $snow-white;
+  margin: 0 5px 5px 0;
 }
 
 .repos {
@@ -68,6 +69,9 @@
     .description {
       font-size: 12px;
       opacity: 0.5;
+      img {
+        display: none;
+      }
     }
   }
 }

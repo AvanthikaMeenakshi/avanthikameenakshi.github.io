@@ -26,7 +26,8 @@
     "react-router-dom": "^5.2.0",
     "react-truncate-html": "^0.1.7",
     "react-typed": "^1.2.0",
-    "reactstrap": "^8.4.1"
+    "reactstrap": "^8.4.1",
+    "truncate-html": "^1.0.3"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
