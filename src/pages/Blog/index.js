@@ -31,9 +31,9 @@ const Blog = () => {
       )
       .catch((errors) => {
         // react on errors.
+        console.log(errors);
       });
   }, []);
-  console.log(blogPosts);
   return (
     <div className="repos">
       {blogPosts.map((post) => (

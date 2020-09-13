@@ -21,7 +21,6 @@ const WorkExperience = () => {
           const entriesToShow = expandedExperiences[workplace]
             ? exp.projects
             : [];
-          console.log(exp.projects);
           return (
             <Timeline.Item
               key={workplace}
