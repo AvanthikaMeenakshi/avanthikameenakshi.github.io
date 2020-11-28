@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Layout from './components/Layout';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { browserHistory } from 'react-router';
 import Hello from './pages/HelloPage';
 import ResumeAndTimeline from './pages/ResumeAndTimeline';
 import Blog from './pages/Blog';
@@ -10,7 +11,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './scss/app.scss';
 
 const App = () => (
-  <Router>
+  <Router history={browserHistory}>
     <Layout>
       <Switch>
         <Route exact path="/" component={Hello} />

@@ -4,6 +4,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = () => ({
   entry: './src/index.js',
+  mode: "development",
   output: {
     filename: '[name].[hash].js',
     path: path.resolve(__dirname, 'public'),
@@ -41,7 +42,6 @@ module.exports = () => ({
       },
     ],
   },
-  mode: 'development',
   devServer: {
     historyApiFallback: true,
   },
