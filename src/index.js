@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Layout from './components/Layout';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import Hello from './pages/HelloPage';
 import ResumeAndTimeline from './pages/ResumeAndTimeline';
 import Blog from './pages/Blog';

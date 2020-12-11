@@ -2,13 +2,11 @@
   "name": "my-portfolio",
   "version": "1.0.0",
   "description": "Personal portfolio",
-  "main": "index.js",
+  "homepage": "./",
   "scripts": {
     "dev": "webpack-dev-server --open --hot",
-    "start": "node server.js",
-    "build": "webpack",
-    "heroku-prebuild": "npm install --dev",
-    "heroku-postbuild": "npm run build"
+    "start": "node ./src/server.js",
+    "build": "webpack"
   },
   "keywords": [],
   "author": "Avanthika",
