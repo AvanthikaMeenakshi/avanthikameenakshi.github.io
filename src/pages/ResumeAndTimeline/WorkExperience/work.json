@@ -26,10 +26,12 @@
         "client": "Shipping and label printing services",
         "workDetails": [
           "Working on the modules that allows ebay sellers and buyers to choose shipping services, print labels and file return claims", 
-          "Working on TTD with react, react hooks, redux in the shipping portal",
+          "Planned, led and architeched an application with node.js that talks to bankend services to allow printing shipping labels worldwide",
+          "Working on TTD with react, react hooks, redux in the shipping labels team",
+          "Working on Java, Kotlin applications to consume data from external apis",
           "Learnt a open-source framework called Marko.js for building microservices",
-          "Learning java and kotlin to understand the backend better",
           "Using Ruby and Capybara to do end-to-end integration test cases",
+          "Have been the champion of refactoring, have reduced bundle sizes by 30% and have increased performance of the pages by 23%",
           "Actively pair-programming with colleagues to understand the vast architecture."
         ]
       }

@@ -20,7 +20,11 @@ const TimelineItem = ({ side, title, subtitle, content, dates }) => {
 };
 
 TimelineItem.propTypes = {
-  side: PropTypes.string
+  side: PropTypes.string,
+  title: PropTypes.string,
+  subtitle: PropTypes.string,
+  content: PropTypes.string,
+  dates: PropTypes.string
 };
 
 TimelineItem.defaultProps = {

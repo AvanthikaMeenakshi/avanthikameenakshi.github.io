@@ -1,5 +1,4 @@
 import React from 'react';
-import moment from 'moment';
 
 export const socialLinks = {
   email: (
@@ -85,8 +84,7 @@ export const socialLinks = {
 
 export const staticContent = [
   <p key="info-1">
-    I&apos;m a programmer and a learner. I was that kid who was ridiculed for
-    asking questions. Years down the lane, I aspire to architect solutions.
+    I&apos;m a Full Stack Software Engineer working with eBay at the moment.
     I&apos;m obsessed with coding, but I believe in thinking and planning before
     writing the code. I go mad when code isn&apos;t aligned. I like keeping the
     code DRY. The amount of code I punch in is directly proportional to the tea
@@ -95,9 +93,7 @@ export const staticContent = [
   <p key="info-2">
     While I&apos;m not coding or doing stuff related to tech, you can find me
     reviewing a book {socialLinks.goodreads} or in a library. Or spending time
-    with my cat, Anjali. She&apos;s a{' '}
-    {moment().diff('2012-10-02', 'years', false)} year old white cat with
-    beautiful yellow eyes.
+    with my cats, Anjali, Sombra and Delilah.
   </p>,
   <p key="info-3">
     If you wish to connect with me, drop me an {socialLinks.email} - I&apos;m
